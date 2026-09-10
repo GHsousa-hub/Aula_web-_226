@@ -1,1 +1,3 @@
-alert("Olá Welder")
+var a = "teste a"
+
+console.log(a)
