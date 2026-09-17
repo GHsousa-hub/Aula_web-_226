@@ -6,4 +6,4 @@ function somar(a,b){
     return (c)
 }
 
-console.log(a)
+console.log(somar(valorUM,valorDois))
