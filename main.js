@@ -1,9 +1,14 @@
-var valorUM = 5
-let valorDois = 11
+/*welder rg:26110286*/
 
-function somar(a,b){
-    let c =a+b
-    return (c)
-}
+const formulario = document.getElementById("calcForm")/*pegando o formulário*/
 
-console.log(somar(valorUM,valorDois))
+formulario.addEventListener("submit", function(e){
+    e.preventDefault();/*impede que a página seja recarregada*/ 
+
+    const a = Number(document.getElementById("num1").value)
+    const b = Number(document.getElementById("num2").value)
+
+    const soma = a+b
+
+    document.getElementById("resultado").textContent = soma
+})
